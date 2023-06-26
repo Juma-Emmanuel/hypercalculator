@@ -315,13 +315,13 @@ Widget Answerbutton(){
                 ),
               ),
               onTap: (){
-                /*Navigator.push(context,
+                Navigator.push(context,
                   MaterialPageRoute(
                     builder: (context)=> DetailScreen(
                         widgetFunction: about
                     ),
                   ),
-                );*/
+                );
 
 
               },
@@ -551,13 +551,15 @@ Widget donation() {
       )
   );
 }
-/*Widget about(){
+Widget about(){
   return Container(
+    alignment: Alignment.topCenter,
+    padding: EdgeInsets.fromLTRB(15,20,10,0),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'App Name',
+          'Hypercalc ',
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -569,60 +571,48 @@ Widget donation() {
           style: TextStyle(fontSize: 18),
         ),
         SizedBox(height: 16),
+
+
+        SizedBox(height: 16),
         Text(
-          'Description:',
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          'Developer Information:',
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
+        SizedBox(height: 8),
         Text(
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor massa et neque fringilla, et consectetur urna rhoncus. Mauris sed tortor justo.',
+          'Juma Emmanuel',
           style: TextStyle(fontSize: 16),
         ),
         SizedBox(height: 16),
+
+          Text(
+                'jumaemmanuel.netlify.app',
+                style: TextStyle(
+                  color: Colors.blue,
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+
+        SizedBox(height: 16),
+
+            SizedBox(height: 8),
+
         Text(
-          'Developer:',
+          'Privacy policy:',
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
         Text(
-          'Your App Company',
+          'This application does not collect any personal information',
+
           style: TextStyle(fontSize: 16),
         ),
+
         SizedBox(height: 16),
-        Text(
-          'Contact:',
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-        ),
-        Text(
-          'Email: info@example.com\nWebsite: www.example.com',
-          style: TextStyle(fontSize: 16),
-        ),
-        SizedBox(height: 16),
-        TextButton(
-          onPressed: () {
-            // Replace 'privacy_policy_url' with the URL of your app's privacy policy
-            // e.g., https://www.example.com/privacy-policy
-           // launchURL('privacy_policy_url');
-          },
-          child: Text(
-            'Privacy Policy',
-            style: TextStyle(
-              color: Colors.blue,
-              decoration: TextDecoration.underline,
-            ),
-          ),
-        ),
-        SizedBox(height: 16),
-        Text(
-          'Open Source Libraries:',
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-        ),
-        Text(
-          'Library A\nLibrary B\nLibrary C',
-          style: TextStyle(fontSize: 16),
-        ),
-      ],
+
+          ],
     ),
   );
-}*/
+}
 class DetailScreen extends StatelessWidget {
   // const DetailScreen({Key? key}) : super(key: key);
 
