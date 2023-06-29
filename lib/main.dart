@@ -421,7 +421,7 @@ Widget Answerbutton(){
 
                         children: [
                           Answerbutton(),
-                         // buildButton("Ans",1/*,Colors.deepOrangeAccent*/),
+
                         ]
                     ),
 
@@ -617,7 +617,7 @@ class DetailScreen extends StatelessWidget {
   // const DetailScreen({Key? key}) : super(key: key);
 
   final Widget Function()  widgetFunction;
-  // final Widget Function()  copyrightFunction;
+
 
   DetailScreen({required this.widgetFunction});
 
@@ -627,7 +627,7 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(''),
-       // backgroundColor: Colors.pink[100],
+
       ),
 
       body: Column(
