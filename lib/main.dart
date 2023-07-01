@@ -93,7 +93,7 @@ class SimpleCalculator extends StatefulWidget {
 }
 
 class _SimpleCalculatorState extends State<SimpleCalculator> {
-
+  String numOne = "0";
 String equation = "0";
 String result = "0";
 String expression = "";
@@ -115,6 +115,20 @@ else if(buttonText == "⌫"){
   if(equation == ""){
     equation = "0";
   }
+
+}
+else if(buttonText == "%"){
+  equationFontSize = 48.0;
+  resultFontSize = 38.0;
+  String str = numOne.toString();
+
+  numOne =equation.substring(0);
+  double eq2 =double.parse(numOne);
+  eq2= eq2/100;
+
+  String  feq2 =eq2.toString();
+  equation = feq2;
+
 
 }
 else if(buttonText == "="){
