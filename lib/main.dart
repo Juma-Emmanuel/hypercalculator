@@ -117,13 +117,17 @@ else if(buttonText == "⌫"){
   }
 
 }
-else if(buttonText == "%"){
+else if( buttonText=="%" ){
   equationFontSize = 48.0;
   resultFontSize = 38.0;
+
+
+
   String str = numOne.toString();
+  String pos=equation.substring(equation.indexOf("%")+1);
 
   numOne =equation.substring(0);
-  double eq2 =double.parse(numOne);
+  double eq2 =double.parse(pos);
   eq2= eq2/100;
 
   String  feq2 =eq2.toString();
